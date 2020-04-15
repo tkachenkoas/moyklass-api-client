@@ -13,6 +13,9 @@
 
 package com.moyklass.api.invoker;
 
+import com.moyklass.api.invoker.auth.ApiKeyAuth;
+import com.moyklass.api.invoker.auth.Authentication;
+import com.moyklass.api.invoker.auth.HttpBasicAuth;
 import okhttp3.*;
 import okhttp3.internal.http.HttpMethod;
 import okhttp3.internal.tls.OkHostnameVerifier;
@@ -27,7 +30,6 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Type;
-import java.net.URI;
 import java.net.URLConnection;
 import java.net.URLEncoder;
 import java.security.GeneralSecurityException;
@@ -36,7 +38,6 @@ import java.security.SecureRandom;
 import java.security.cert.Certificate;
 import java.security.cert.CertificateException;
 import java.security.cert.CertificateFactory;
-import java.security.cert.X509Certificate;
 import java.text.DateFormat;
 import java.time.LocalDate;
 import java.time.OffsetDateTime;
@@ -46,11 +47,6 @@ import java.util.Map.Entry;
 import java.util.concurrent.TimeUnit;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import com.moyklass.api.invoker.auth.Authentication;
-import com.moyklass.api.invoker.auth.HttpBasicAuth;
-import com.moyklass.api.invoker.auth.HttpBearerAuth;
-import com.moyklass.api.invoker.auth.ApiKeyAuth;
 
 public class ApiClient {
 

@@ -13,33 +13,12 @@
 
 package com.moyklass.api;
 
-import com.moyklass.api.invoker.ApiCallback;
-import com.moyklass.api.invoker.ApiClient;
-import com.moyklass.api.invoker.ApiException;
-import com.moyklass.api.invoker.ApiResponse;
-import com.moyklass.api.invoker.Configuration;
-import com.moyklass.api.invoker.Pair;
-import com.moyklass.api.invoker.ProgressRequestBody;
-import com.moyklass.api.invoker.ProgressResponseBody;
-
 import com.google.gson.reflect.TypeToken;
-
-import java.io.IOException;
-
-
-import java.time.LocalDate;
-import com.moyklass.api.model.MKClass;
-import com.moyklass.api.model.MKCourse;
-import com.moyklass.api.model.MKDownloadFile;
-import com.moyklass.api.model.MKErrorHandling;
-import com.moyklass.api.model.MKLessonMarkEdit;
-import com.moyklass.api.model.MKLessonRecord;
-import com.moyklass.api.model.MKLessonRecordEdit;
-import com.moyklass.api.model.MKLessonTaskEdit;
-import com.moyklass.api.model.MKLessons;
-import com.moyklass.api.model.MKLicenseRestricts;
+import com.moyklass.api.invoker.*;
+import com.moyklass.api.model.*;
 
 import java.lang.reflect.Type;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;

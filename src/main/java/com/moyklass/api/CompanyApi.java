@@ -13,20 +13,8 @@
 
 package com.moyklass.api;
 
-import com.moyklass.api.invoker.ApiCallback;
-import com.moyklass.api.invoker.ApiClient;
-import com.moyklass.api.invoker.ApiException;
-import com.moyklass.api.invoker.ApiResponse;
-import com.moyklass.api.invoker.Configuration;
-import com.moyklass.api.invoker.Pair;
-import com.moyklass.api.invoker.ProgressRequestBody;
-import com.moyklass.api.invoker.ProgressResponseBody;
-
 import com.google.gson.reflect.TypeToken;
-
-import java.io.IOException;
-
-
+import com.moyklass.api.invoker.*;
 import com.moyklass.api.model.MKFilial;
 import com.moyklass.api.model.MKManager;
 import com.moyklass.api.model.MKRoom;

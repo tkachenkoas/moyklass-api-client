@@ -13,27 +13,12 @@
 
 package com.moyklass.api.model;
 
-import java.util.Objects;
-import java.util.Arrays;
-import com.google.gson.TypeAdapter;
-import com.google.gson.annotations.JsonAdapter;
 import com.google.gson.annotations.SerializedName;
-import com.google.gson.stream.JsonReader;
-import com.google.gson.stream.JsonWriter;
-import com.moyklass.api.model.MKAccountRestricted;
-import com.moyklass.api.model.MKCompanyRestricted;
-import com.moyklass.api.model.MKUserClass;
-import com.moyklass.api.model.MKUserCourse;
-import com.moyklass.api.model.MKUserFilial;
-import com.moyklass.api.model.MKUserManager;
-import com.moyklass.api.model.MKUserRestricted;
-import com.moyklass.api.model.MKUserRoom;
-import com.moyklass.api.model.MKUserSubscription;
-import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
-import java.io.IOException;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 /**
  * MKAccountInfo

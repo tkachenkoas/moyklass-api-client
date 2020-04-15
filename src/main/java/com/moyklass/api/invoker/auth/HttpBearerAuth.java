@@ -15,8 +15,8 @@ package com.moyklass.api.invoker.auth;
 
 import com.moyklass.api.invoker.Pair;
 
-import java.util.Map;
 import java.util.List;
+import java.util.Map;
 
 @javax.annotation.Generated(value = "org.openapitools.codegen.languages.JavaClientCodegen", date = "2020-04-15T19:21:47.202+03:00[Asia/Jerusalem]")
 public class HttpBearerAuth implements Authentication {

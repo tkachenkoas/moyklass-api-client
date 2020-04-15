@@ -14,13 +14,10 @@
 package com.moyklass.api.invoker.auth;
 
 import com.moyklass.api.invoker.Pair;
-
 import okhttp3.Credentials;
 
-import java.util.Map;
 import java.util.List;
-
-import java.io.UnsupportedEncodingException;
+import java.util.Map;
 
 public class HttpBasicAuth implements Authentication {
     private String username;
