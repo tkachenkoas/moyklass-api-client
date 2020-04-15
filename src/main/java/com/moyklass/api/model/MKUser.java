@@ -74,6 +74,9 @@ public class MKUser {
   @SerializedName(SERIALIZED_NAME_ATTRIBUTES)
   private List<Object> attributes = null;
 
+  public static final String SERIALIZED_NAME_JOINS = "joins";
+  @SerializedName(SERIALIZED_NAME_JOINS)
+  private List<MKUserJoin> joins = null;
 
    /**
    * ID ученика в системе
@@ -338,6 +341,13 @@ public class MKUser {
     this.attributes = attributes;
   }
 
+  public List<MKUserJoin> getJoins() {
+    return joins;
+  }
+
+  public void setJoins(List<MKUserJoin> joins) {
+    this.joins = joins;
+  }
 
   @Override
   public boolean equals(java.lang.Object o) {
